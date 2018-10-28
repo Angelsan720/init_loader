@@ -1,6 +1,7 @@
-package ini_loader
+main init_loader
 import "fmt"
 import "os"
+import "github.com/Angelsan720/init_loader"
 func assert(b bool) {
 	if b {
 		return
