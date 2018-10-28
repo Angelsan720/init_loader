@@ -1,4 +1,4 @@
-pakage init_loader
+package init_loader
 import "fmt"
 import "os"
 func assert(b bool) {
