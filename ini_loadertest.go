@@ -18,7 +18,7 @@ func main(){
 	m["Section-B"]["greeting"]="Hello World"
 	assert(m == Read_ini("example.ini"))
 	m["Section-C"] = map[string]string{}
-	assert(m != Read_ini("example.ini")
+	assert(m != Read_ini("example.ini"))
 	fmt.Print("Test Successful")
 
 }
