@@ -1,11 +1,12 @@
 package ini_loader
 import "fmt"
+import "os"
 func assert(b bool) {
 	if b {
 		return
 	}
 	fmt.Print("Error in test")
-	Exit(0)
+	os.Exit(0)
 }
 
 func main(){
