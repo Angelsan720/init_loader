@@ -1,5 +1,4 @@
 package ini_loader
-import "os"
 import "fmt"
 func assert(b bool) {
 	if b {
