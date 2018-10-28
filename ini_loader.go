@@ -12,9 +12,8 @@
 
 package ini_loader
 
-import(	"io/ioutil"
-	"fmt"
-	"log")
+import "io/ioutil"
+import "log"
 func check(e error) {
     if e != nil {
         panic(e)
