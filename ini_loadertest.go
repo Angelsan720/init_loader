@@ -16,9 +16,10 @@ func main(){
 	m["Section-A"]["var"]="true"
 	m["Section-A"]["foo"]="bar"
 	m["Section-B"]["greeting"]="Hello World"
-	assert(m == Read_ini("example.ini"))
-	m["Section-C"] = map[string]string{}
-	assert(m != Read_ini("example.ini"))
+	dic := Read_ini("example.ini")
+	assert(m["Section-B"]["greeting"] == dic["Section-B"]["greeting"])
+	assert(m["Section-A"]["foo"] == dic["Section-A"]["foo"])
+	assert(m["Section-A"]["var"] == dic["Section-A"]["var"])
+	
 	fmt.Print("Test Successful")
-
 }
